@@ -12,6 +12,9 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
     }
+    AppComponent.prototype.ngOnInit = function () {
+        this.header = "Angular2 has initialized correctly";
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',

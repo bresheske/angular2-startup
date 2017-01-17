@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent 
 {
-  
+  public header: string;
 
-
+  ngOnInit() {
+    this.header = "Angular2 has initialized correctly";
+  }
 }
