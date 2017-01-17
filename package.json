@@ -8,6 +8,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
+    "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\""
   },
   "license": "ISC",
   "dependencies": {
@@ -28,7 +29,12 @@
     "zone.js": "latest",
     "angular2-in-memory-web-api": "latest",
     "jquery": "latest",
-    "bootstrap": "latest"
+    "bootstrap": "latest",
+    "karma": "latest",
+    "jasmine": "latest",
+    "karma-jasmine": "latest",
+    "karma-chrome-launcher": "latest",
+    "karma-htmlfile-reporter": "latest"
   },
   "devDependencies": {
     "concurrently": "latest",

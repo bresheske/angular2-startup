@@ -4,22 +4,15 @@ import { DebugElement }    from '@angular/core';
 import { AppComponent } from './app.component';
 
 describe('App Component Tests', () => {
-
   let comp: AppComponent;
   let fixture: ComponentFixture<AppComponent>;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({
-        declarations: [ AppComponent ],
-    });
-
-    fixture = TestBed.createComponent(AppComponent);
-
-    comp = fixture.componentInstance;
+    comp = new AppComponent();
+    comp.ngOnInit();
   });
 
   it('appcomponent_shouldisplay_originaltitle', () => {
-    fixture.detectChanges();
     expect(comp.header).toEqual('Angular2 has initialized correctly');
   });
 });
